@@ -21,6 +21,7 @@ and a BSc in Management Science and Technology
 from the Athens University of Economics and Business.
 I have previously worked in industry as a software engineer
 at the [Greek Research and Technology Network (GRNET)](grnet.gr).
+For my detailed CV, please follow this [link](./assets/pdf/theosot_cv.pdf).
 
 My main research interests include programming languages, program analysis,
 and software testing.
