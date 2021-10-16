@@ -34,6 +34,10 @@
               {% endif %}
             {% endfor %}
           {% endif %}
+		  {% assign author_is_coauthor = false %}
+          {% if entry.coauthors contains author.last and entry.coauthors contains author.first%}
+              {% assign author_is_coauthor = true %}
+          {% endif %}
           
           {% if forloop.length == 1 %}
             {% if author_is_self %}
@@ -44,7 +48,7 @@
           {% else %}
             {% unless forloop.last %}
               {% if author_is_self %}
-                <em>{{author.first}} {{author.last}}</em>,
+                <em>{{author.last}} {{author.first}}</em>{% if author_is_coauthor %}*{% endif %},
               {% else %}
                 {% if coauthor_url %}
                   <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a>,
@@ -76,6 +80,9 @@
       {% if entry.year %}
         {{entry.year}}
       {% endif %}<br>
+      {% if entry.coauthors %}
+        <em><font size="-1">* Both authors contributed equally</font></em>
+      {% endif %}
       {% if entry.award %}
           <b><em>{{entry.award}}</em></b>
       {% endif %}
