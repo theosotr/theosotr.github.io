@@ -1,0 +1,13 @@
+<div class="awards">
+  <h2>Awards and Honours</h2>
+  {% if site.awards %}
+      {% assign awards = site.awards %}
+      <ul>
+      {% for item in awards %}
+      <li>{{item.content}}</li>
+      {% endfor %}
+      </ul>
+  {% else %}
+    <p>No awards so far...</p>
+  {% endif %}
+</div>

@@ -103,6 +103,18 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  awards:
+      defaults:
+        layout: post
+      output: true
+      permalink: /awards/:path/
+  service:
+      defaults:
+        layout: post
+      output: true
+      permalink: /service/:path/
+  
+    
 
 news_limit: 5
 

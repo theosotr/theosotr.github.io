@@ -33,6 +33,13 @@ layout: default
       {{ content }}
     </div>
 
+    {% if page.service %}
+          {% include service.html %}
+    {% endif %}
+    {% if page.awards %}
+          {% include awards.html %}
+    {% endif %}
+
     {% if page.news %}
       {% include news.html %}
     {% endif %}
