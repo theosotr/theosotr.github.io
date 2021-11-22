@@ -6,7 +6,7 @@ description: PhD student, Athens University of Economics and Business, Athens, G
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: pic.jpg
 
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
