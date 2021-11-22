@@ -48,7 +48,7 @@
           {% else %}
             {% unless forloop.last %}
               {% if author_is_self %}
-              <em>{{author.last}} {{author.first}}{% if author_is_coauthor %}*{% endif %}</em>,
+              <em>{{author.first}} {{author.last}}{% if author_is_coauthor %}*{% endif %}</em>,
               {% else %}
                 {% if coauthor_url %}
                 <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a>{% if author_is_coauthor %}*{% endif %},
