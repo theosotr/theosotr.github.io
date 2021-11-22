@@ -1,12 +1,12 @@
 /******************************************************************************* Variables used throughout the theme. To adjust anything, simply edit the variables below and rebuild the theme. */
 /******************************************************************************* Themes */
-:root { --global-bg-color: #ffffff; --global-code-bg-color: rgba(181, 9, 172, 0.05); --global-text-color: #000000; --global-text-color-light: #828282; --global-theme-color: #B509AC; --global-hover-color: #B509AC; --global-footer-bg-color: #424242; --global-footer-text-color: #e8e8e8; --global-footer-link-color: #ffffff; --global-distill-app-color: #828282; }
+:root { --global-bg-color: #ffffff; --global-code-bg-color: rgba(181, 9, 172, 0.05); --global-text-color: #000000; --global-text-color-light: #828282; --global-theme-color: #B509AC; --global-hover-color: #B509AC; --global-footer-bg-color: #424242; --global-footer-text-color: #e8e8e8; --global-footer-link-color: #ffffff; --global-distill-app-color: #828282; --global-divider-color: rgba(0,0,0,.1); }
 
 :root .fa-sun { display: none; }
 
 :root .fa-moon { padding-left: 10px; padding-top: 12px; display: block; }
 
-:root { --global-bg-color: #252a34; --global-code-bg-color: #2c3237; --global-text-color: #e8e8e8; --global-text-color-light: #e8e8e8; --global-theme-color: #2698BA; --global-hover-color: #2698BA; --global-footer-bg-color: #e8e8e8; --global-footer-text-color: #424242; --global-footer-link-color: #000000; --global-distill-app-color: #e8e8e8; }
+:root { --global-bg-color: #252a34; --global-code-bg-color: #2c3237; --global-text-color: #e8e8e8; --global-text-color-light: #e8e8e8; --global-theme-color: #2698BA; --global-hover-color: #2698BA; --global-footer-bg-color: #e8e8e8; --global-footer-text-color: #424242; --global-footer-link-color: #000000; --global-distill-app-color: #e8e8e8; --global-divider-color: #424246; }
 
 :root .fa-sun { padding-left: 10px; padding-top: 12px; display: block; }
 
@@ -14,6 +14,8 @@
 
 /****************************************************************************** Content */
 body { padding-bottom: 70px; color: var(--global-text-color); background-color: var(--global-bg-color); }
+
+body h1, body h2, body h3, body h4, body h5, body h6 { scroll-margin-top: 66px; }
 
 body.fixed-top-nav { padding-top: 56px; }
 
@@ -26,13 +28,17 @@ body.sticky-bottom-footer { padding-bottom: 0; }
 /****************************************************************************** Publications */
 /***************************************************************************** Projects */
 /******************************************************************************* Styles for the base elements of the theme. */
-p, h1, h2, h3, h4, h5, h6, em, div, span, strong { color: var(--global-text-color); }
+p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong { color: var(--global-text-color); }
+
+hr { border-top: 1px solid var(--global-divider-color); }
 
 a, table.table a { color: var(--global-theme-color); }
 
 a:hover, table.table a:hover { color: var(--global-theme-color); text-decoration: underline; }
 
-a:hover:after, table.table a:hover:after { width: 100%; }
+a:hover:after :not(.nav-item.dropdown), table.table a:hover:after :not(.nav-item.dropdown) { width: 100%; }
+
+blockquote { background: var(--global-bg-color); border-left: 2px solid var(--global-theme-color); margin: 1.5em 10px; padding: 0.5em 10px; font-size: 1.2rem; }
 
 .equation { margin-bottom: 1rem; text-align: center; }
 
@@ -42,7 +48,7 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 
 .profile { margin-left: 1rem; width: 100%; }
 
-.profile .address { margin-bottom: 5px; margin-top: 5px; font-family: monospace; font-size: 1.2rem; }
+.profile .address { margin-bottom: 5px; margin-top: 5px; font-family: monospace; }
 
 .profile .address p { display: inline-block; margin: 0; }
 
@@ -54,7 +60,19 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 
 .post-description a:hover { color: var(--global-theme-color); text-decoration: none; }
 
-.navbar { box-shadow: none; border-bottom: 1px solid #e8e8e8; background-color: var(--global-bg-color); opacity: 0.95; }
+.navbar { box-shadow: none; border-bottom: 1px solid var(--global-divider-color); background-color: var(--global-bg-color); opacity: 0.95; }
+
+.navbar .dropdown-menu { background-color: var(--global-bg-color); border: 1px solid var(--global-divider-color); }
+
+.navbar .dropdown-menu a:not(.active) { color: var(--global-text-color); }
+
+.navbar .dropdown-menu a:hover { color: var(--global-hover-color); }
+
+.navbar .dropdown-menu .dropdown-divider { border-top: 1px solid var(--global-divider-color) !important; }
+
+.dropdown-item { color: var(--global-text-color); }
+
+.dropdown-item:hover { color: var(--global-hover-color); background-color: var(--global-bg-color); }
 
 .navbar.navbar-light a:hover { text-decoration: none; }
 
@@ -110,17 +128,19 @@ footer.fixed-bottom a { color: var(--global-footer-link-color); }
 
 footer.fixed-bottom a:hover { color: var(--global-theme-color); text-decoration: none; }
 
-footer.sticky-bottom { border-top: 1px solid #e8e8e8; padding-top: 40px; padding-bottom: 40px; font-size: 0.9rem; }
+footer.sticky-bottom { border-top: 1px solid var(--global-divider-color); padding-top: 40px; padding-bottom: 40px; font-size: 0.9rem; }
 
-.header-bar { border-bottom: 1px solid #e8e8e8; text-align: center; padding-top: 2rem; padding-bottom: 5rem; }
+.header-bar { border-bottom: 1px solid var(--global-divider-color); text-align: center; padding-top: 2rem; padding-bottom: 5rem; }
 
 .header-bar h1 { color: var(--global-theme-color); font-size: 5rem; }
 
 .post-list { margin: 0; margin-bottom: 40px; padding: 0; }
 
-.post-list li { border-bottom: 1px solid #e8e8e8; list-style: none; padding-top: 2rem; padding-bottom: 2rem; }
+.post-list li { border-bottom: 1px solid var(--global-divider-color); list-style: none; padding-top: 2rem; padding-bottom: 2rem; }
 
 .post-list li .post-meta { color: var(--global-text-color-light); font-size: 0.875rem; margin-bottom: 0; }
+
+.post-list li .post-tags { color: var(--global-text-color-light); font-size: 0.875rem; padding-top: 0.25rem; }
 
 .post-list li a { color: var(--global-text-color); text-decoration: none; }
 
@@ -136,25 +156,21 @@ footer.sticky-bottom { border-top: 1px solid #e8e8e8; padding-top: 40px; padding
 
 .distill a:hover { border-bottom-color: var(--global-theme-color); text-decoration: none; }
 
-.projects .card-item { width: auto; margin-bottom: 10px; }
+.projects a { text-decoration: none; }
 
-.projects .card-item a { text-decoration: none; }
+.projects a:hover .card-title { color: var(--global-theme-color); }
+
+.projects .card img { width: 100%; }
+
+.projects .card .card-title { color: #000000; }
+
+.projects .card-item { width: auto; margin-bottom: 10px; }
 
 .projects .card-item .row { display: flex; align-items: center; }
 
-.projects .card-item .card img { width: 100%; }
-
 .projects .grid-item { width: 250px; margin-bottom: 10px; }
 
-.projects .grid-item a { color: black; text-decoration: none; }
-
-.projects .grid-item a:hover { color: var(--global-theme-color); }
-
-.projects .grid-item .card img { width: 100%; }
-
-.projects .grid-item .card .card-title { color: #000000; }
-
-.projects h2.category { color: #e8e8e8; border-bottom: 1px solid #e8e8e8; padding-top: 0.5rem; margin-top: 2rem; margin-bottom: 1rem; text-align: right; }
+.projects h2.category { color: var(--global-divider-color); border-bottom: 1px solid var(--global-divider-color); padding-top: 0.5rem; margin-top: 2rem; margin-bottom: 1rem; text-align: right; }
 
 .publications { margin-top: 2rem; }
 
@@ -164,7 +180,7 @@ footer.sticky-bottom { border-top: 1px solid #e8e8e8; padding-top: 40px; padding
 
 .publications h2 span { font-size: 1.5rem; }
 
-.publications h2.year { color: #e8e8e8; border-top: 1px solid #e8e8e8; padding-top: 1rem; margin-top: 2rem; margin-bottom: -2rem; text-align: right; }
+.publications h2.year { color: var(--global-divider-color); border-top: 1px solid var(--global-divider-color); padding-top: 1rem; margin-top: 2rem; margin-bottom: -2rem; text-align: right; }
 
 .publications ol.bibliography { list-style: none; padding: 0; margin-top: 0; }
 
@@ -214,8 +230,20 @@ code { color: var(--global-theme-color); background-color: var(--global-code-bg-
 
 html.transition, html.transition *, html.transition *:before, html.transition *:after { transition: all 750ms !important; transition-delay: 0 !important; }
 
+.post .post-meta { color: var(--global-text-color-light); font-size: 0.875rem; margin-bottom: 0; }
+
+.post .post-tags { color: var(--global-text-color-light); font-size: 0.875rem; padding-bottom: 1rem; }
+
+.post .post-tags a { color: var(--global-text-color-light); text-decoration: none; }
+
+.post .post-tags a:hover { color: var(--global-theme-color); }
+
+.post .post-content blockquote { border-left: 5px solid var(--global-theme-color); padding: 8px; }
+
+.post-tags { color: var(--global-text-color-light); font-size: 0.875rem; padding-top: 0.25rem; }
+
 /******************************************************************************* Style overrides for distill blog posts. */
-d-byline { border-top-color: #e8e8e8 !important; }
+d-byline { border-top-color: var(--global-divider-color) !important; }
 
 d-byline h3 { color: var(--global-text-color) !important; }
 
@@ -223,20 +251,44 @@ d-byline a, d-article d-byline a { color: var(--global-text-color) !important; }
 
 d-byline a:hover, d-article d-byline a:hover { color: var(--global-hover-color) !important; }
 
-d-article { border-top-color: #e8e8e8 !important; }
+d-article { border-top-color: var(--global-divider-color) !important; }
 
-d-article a, d-article p, d-article h1, d-article h2, d-article h3, d-article h4, d-article h5, d-article h6 { color: var(--global-text-color) !important; }
+d-article a, d-article p, d-article h1, d-article h2, d-article h3, d-article h4, d-article h5, d-article h6, d-article li, d-article table { color: var(--global-text-color) !important; }
 
-d-article a, d-article h1, d-article h2, d-article hr { border-bottom-color: #e8e8e8 !important; }
+d-article a, d-article h1, d-article h2, d-article hr, d-article table, d-article table th, d-article table td { border-bottom-color: var(--global-divider-color) !important; }
 
 d-article a:hover { border-bottom-color: var(--global-hover-color) !important; }
 
-d-appendix { border-top-color: #e8e8e8 !important; color: var(--global-distill-app-color) !important; }
+d-article b i { display: inline; }
+
+d-article d-contents { align-self: start; grid-column: 1 / 4; grid-row: auto / span 4; justify-self: end; margin-top: 0em; padding-left: 2em; padding-right: 3em; border-right: 1px solid var(--global-divider-color); width: calc(max(70%, 300px)); margin-right: 0px; margin-top: 0em; display: grid; grid-template-columns: minmax(8px, 1fr) [toc] auto minmax(8px, 1fr) [toc-line] 1px minmax(32px, 2fr); }
+
+d-article d-contents nav { grid-column: toc; }
+
+d-article d-contents nav a { border-bottom: none !important; }
+
+d-article d-contents nav a:hover { border-bottom: 1px solid var(--global-text-color) !important; }
+
+d-article d-contents nav h3 { margin-top: 0; margin-bottom: 1em; }
+
+d-article d-contents nav div { display: block; outline: none; margin-bottom: 0.8em; color: rgba(0, 0, 0, 0.8); font-weight: bold; }
+
+d-article d-contents nav ul { padding-left: 1em; margin-top: 0; margin-bottom: 6px; list-style-type: none; }
+
+d-article d-contents nav ul li { margin-bottom: 0.25em; }
+
+d-article d-contents .figcaption { line-height: 1.4em; }
+
+d-article d-contents toc-line { border-right: 1px solid var(--global-divider-color); grid-column: toc-line; }
+
+d-appendix { border-top-color: var(--global-divider-color) !important; color: var(--global-distill-app-color) !important; }
 
 d-appendix h3, d-appendix li, d-appendix span { color: var(--global-distill-app-color) !important; }
 
 d-appendix a, d-appendix a.footnote-backlink { color: var(--global-distill-app-color) !important; }
 
 d-appendix a:hover, d-appendix a.footnote-backlink:hover { color: var(--global-hover-color) !important; }
+
+@media (max-width: 1024px) { d-article d-contents { display: block; grid-column-start: 2; grid-column-end: -2; padding-bottom: 0.5em; margin-bottom: 1em; padding-top: 0.5em; width: 100%; border: 1px solid var(--global-divider-color); } d-article d-contents nav { grid-column: none; } }
 
 /*# sourceMappingURL=main.css.map */
