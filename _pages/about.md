@@ -17,13 +17,16 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 I am a PhD candidate at the Department of Management Science and Technology,
-[Athens University of Economics and Business](https://aueb.gr/).
+[Athens University of Economics and Business](https://aueb.gr/)
+advised by Prof [Diomidis Spinellis](spinellis.gr).
 I hold an MSc with distinction in Advanced Computing
 from [Imperial College London](https://www.imperial.ac.uk/),
 and a BSc in Management Science and Technology
 from the Athens University of Economics and Business.
 I have previously worked in industry as a software engineer
-at the [Greek Research and Technology Network (GRNET)](https://grnet.gr).
+at the [Greek Research and Technology Network (GRNET)](https://grnet.gr),
+while I have also interned at Amazon Web Services (AWS)
+as an applied scientist.
 For my detailed CV, please follow this [link](./assets/pdf/theosot_cv.pdf).
 
 My main research interests include programming languages, program analysis,
