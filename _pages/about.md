@@ -16,18 +16,22 @@ all_papers: true
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a PhD candidate at the Department of Management Science and Technology,
-[Athens University of Economics and Business](https://aueb.gr/)
-advised by Prof [Diomidis Spinellis](spinellis.gr).
-I hold an MSc with distinction in Advanced Computing
-from [Imperial College London](https://www.imperial.ac.uk/),
-and a BSc in Management Science and Technology
-from the Athens University of Economics and Business.
-I have previously worked in industry as a software engineer
-at the [Greek Research and Technology Network (GRNET)](https://grnet.gr),
-while I have also interned at Amazon Web Services (AWS)
-as an applied scientist.
-For my detailed CV, please follow this [link](./assets/pdf/theosot_cv.pdf).
+I am a PhD student at the
+[Athens University of Economics and Business](https://aueb.gr)
+working in the areas of programming languages, program analysis, and testing under the
+supervision of Prof [Diomidis Spinellis](spinellis.gr).
+My research focuses on the design of appropriate
+abstractions that help examine the reliability of complex software,
+such as compilers,
+data-oriented systems,
+or software that heavily relies on the file system.
+I hold an MSc with distinction in Advanced Computing from
+[Imperial College London](https://www.imperial.ac.uk) and I have previously
+worked as a software engineer at the
+[Greek Research and Technology Network (GRNET)](https://grnet.gr).
+Recently,
+I was an intern at Amazon Web Services (AWS) where I worked on the design and implementation
+of static analysis techniques for detecting security issues.
 
 My main research interests include programming languages, program analysis,
 and testing.
