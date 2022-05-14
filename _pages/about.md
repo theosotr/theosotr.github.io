@@ -19,7 +19,7 @@ social: true  # includes social icons at the bottom of the page
 I am a PhD student at the
 [Athens University of Economics and Business](https://aueb.gr)
 working in the areas of programming languages, program analysis, and testing under the
-supervision of Prof [Diomidis Spinellis](spinellis.gr).
+supervision of Prof [Diomidis Spinellis](https://spinellis.gr).
 My research focuses on the design of appropriate
 abstractions that help examine the reliability of complex software,
 such as compilers,
@@ -32,6 +32,7 @@ worked as a software engineer at the
 Recently,
 I was an intern at Amazon Web Services (AWS) where I worked on the design and implementation
 of static analysis techniques for detecting security issues.
+For my detailed CV, please follow this [link](./assets/pdf/theosot_cv.pdf).
 
 My main research interests include programming languages, program analysis,
 and testing.
