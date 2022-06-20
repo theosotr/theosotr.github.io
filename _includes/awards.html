@@ -1,7 +1,7 @@
 <div class="awards">
   <h2>Awards and Honours</h2>
   {% if site.awards %}
-      {% assign awards = site.awards %}
+      {% assign awards = site.awards | sort: "date" | reverse %}
       <ul>
       {% for item in awards %}
       <li>{{item.content}}</li>

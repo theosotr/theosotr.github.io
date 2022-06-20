@@ -83,11 +83,14 @@
       {% if entry.year %}
         {{entry.year}}
       {% endif %}<br>
+      {% if entry.award %}
+          <b><em>{{entry.award}}</em></b><br>
+      {% endif %}
+      {% if entry.award2 %}
+          <b><em>{{entry.award2}}</em></b><br>
+      {% endif %}
       {% if entry.coauthors %}
         <em><font size="-1">* Both authors contributed equally</font></em>
-      {% endif %}
-      {% if entry.award %}
-          <b><em>{{entry.award}}</em></b>
       {% endif %}
       {% if entry.note %}
           <em>{{entry.note}}</em>
