@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: PhD student, Athens University of Economics and Business, Athens, Greece
+description: Athens University of Economics and Business, Athens, Greece
 
 profile:
   align: right
@@ -16,15 +16,15 @@ all_papers: true
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a PhD student at the
-[Athens University of Economics and Business](https://aueb.gr)
-working in the areas of programming languages, program analysis, and testing under the
-supervision of Prof [Diomidis Spinellis](https://spinellis.gr).
 My research focuses on the design of appropriate
 abstractions that help examine the reliability of complex software,
 such as compilers,
 data-oriented systems,
 or software that heavily relies on the file system.
+I completed my PhD at the
+[Athens University of Economics and Business](https://aueb.gr)
+working in the areas of programming languages, program analysis, and testing under the
+supervision of Prof [Diomidis Spinellis](https://spinellis.gr).
 I hold an MSc with distinction in Advanced Computing from
 [Imperial College London](https://www.imperial.ac.uk) and I have previously
 worked as a software engineer at the
