@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: Athens University of Economics and Business, Athens, Greece
+description: Postdoctoral researcher, Department of Computer Science, ETH Zurich, Switzerland
 
 profile:
   align: right
@@ -16,6 +16,10 @@ all_papers: true
 social: true  # includes social icons at the bottom of the page
 ---
 
+I am a postdoctoral researcher in the
+[Advanced Software Technologies](https://ast.ethz.ch/)
+group at ETH Zurich, under the guidance of
+Prof [Zhendong Su](https://people.inf.ethz.ch/suz/).
 My research focuses on the design of appropriate
 abstractions that help examine the reliability of complex software,
 such as compilers,
