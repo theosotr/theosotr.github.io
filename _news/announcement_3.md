@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2023-10-04 15:59:00
+date: 2023-11-08 15:59:00
 inline: true
 ---
 
-Our paper "API-driven Program Synthesis for Testing Static Typing Implementations" has been conditionally accepted at POPL'24.
+Our paper "API-driven Program Synthesis for Testing Static Typing Implementations" has been accepted at POPL'24.
