@@ -1,24 +1,23 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Thodoris Sotiropoulos",
+    "label": "Postdoctoral researcher",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "theodoros.sotiropoulos@inf.ethz.ch",
+    "url": "https://theosotr.github.io",
+    "summary": "Software engineering research",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Universitätstrasse 6, CNB H 105",
+      "postalCode": "8092",
+      "city": "Zurich",
+      "countryCode": "CH",
+      "region": "Switzerland"
     },
     "profiles": [
       {
         "network": "Twitter",
         "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "url": "https://x.com/theosotir"
       }
     ]
   },
