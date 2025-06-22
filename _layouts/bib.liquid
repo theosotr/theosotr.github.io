@@ -100,11 +100,11 @@
               {{- author.first }}
               {{ author.last -}}
             </a>
-            {%- if author_is_coauthor %}*{% endif %},
+            {%- if author_is_coauthor %}*{% endif %}
           {% else %}
             {{ author.first }}
             {{ author.last -}}
-            {%- if author_is_coauthor %}*{% endif %},
+            {%- if author_is_coauthor %}*{% endif %}
           {% endif %}
         {%- endif -%}
       {% endfor %}
