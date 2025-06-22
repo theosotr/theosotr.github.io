@@ -46,7 +46,8 @@ such as code analysis,
 test input generation,
 and fault detection.
 To achieve this,
-I leverage and advance programming language technologies,
-including formal models, program analysis techniques (both static and dynamic),
-randomized automated testing (fuzzing),
-and empirical software engineering methods.
+I leverage and develop (1) programming language technologies,
+such as formal models,
+static and dynamic program analysis,
+or randomized software testing (fuzzing),
+and (2) empirical methods from software engineering.
