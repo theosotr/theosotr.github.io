@@ -7,14 +7,14 @@ ninja.data = [{
     title: "about",
     section: "Navigation",
     handler: () => {
-      window.location.href = "/theosotr.github.io/";
+      window.location.href = "/";
     },
   },{id: "nav-publications",
           title: "publications",
           description: "publications in reversed chronological order.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/theosotr.github.io/publications/";
+            window.location.href = "/publications/";
           },
         },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
         
@@ -102,7 +102,7 @@ ninja.data = [{
         title: 'RSS Feed',
         section: 'Socials',
         handler: () => {
-          window.open("theosotr.github.io/feed.xml", "_blank");
+          window.open("/feed.xml", "_blank");
         },
       },{
         id: 'social-scholar',
