@@ -258,7 +258,7 @@ let determineThemeSetting = () => {
   if (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") {
     themeSetting = "system";
   }
-  return themeSetting;
+  return "dark";
 };
 
 // Determine the computed theme, which can be "dark" or "light". If the theme setting is
