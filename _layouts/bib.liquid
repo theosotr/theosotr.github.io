@@ -77,6 +77,10 @@
             {%- endif -%}
           {% endfor %}
         {%- endif -%}
+		{% assign author_is_coauthor = false %}
+        {% if entry.coauthors contains author.last and entry.coauthors contains author.first%}
+            {% assign author_is_coauthor = true %}
+        {% endif %}
 
         {%- if forloop.length > 1 -%}
           {% if forloop.first == false -%}
@@ -85,20 +89,13 @@
           {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
         {% endif %}
         {%- if author_is_self -%}
-          <em>
-            {{- author.first }}
-            {{ author_last_html -}}
-          </em>
+            <em>{{author.first}} {{author.last}}{% if author_is_coauthor %}*{% endif %}</em>
         {%- else -%}
-          {%- if coauthor_url -%}
-            <a href="{{ coauthor_url }}">
-              {{- author.first }}
-              {{ author_last_html -}}
-            </a>
-          {%- else -%}
-            {{- author.first }}
-            {{ author_last_html -}}
-          {% endif %}
+            {% if coauthor_url %}
+            <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a>{% if author_is_coauthor %}*{% endif %},
+            {% else %}
+            {{author.first}} {{author.last}}{% if author_is_coauthor %}*{% endif %},
+            {% endif %}
         {%- endif -%}
       {% endfor %}
       {%- assign more_authors = author_array_size | minus: author_array_limit -%}
@@ -184,6 +181,9 @@
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+    {% if entry.coauthors %}
+      <em><font size="-1">* Both authors contributed equally</font></em>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">
