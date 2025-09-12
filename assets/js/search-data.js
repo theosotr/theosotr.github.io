@@ -83,6 +83,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-validating-soundness-and-completeness-of-pattern-match-coverage-analyzers-has-been-accepted-to-oopsla-2025",
           title: 'Our paper “Validating Soundness and Completeness of Pattern-Match Coverage Analyzers” has been accepted...',
           description: "",
+          section: "News",},{id: "news-our-paper-best-of-both-worlds-effective-foreign-bridge-identification-in-v8-embedders-for-security-analysis-has-been-accepted-to-ieee-s-amp-amp-p-2026",
+          title: 'Our paper Best of Both Worlds: Effective Foreign Bridge Identification in V8 Embedders...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
