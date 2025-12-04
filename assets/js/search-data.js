@@ -86,6 +86,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-best-of-both-worlds-effective-foreign-bridge-identification-in-v8-embedders-for-security-analysis-has-been-accepted-to-ieee-s-amp-amp-p-2026",
           title: 'Our paper Best of Both Worlds: Effective Foreign Bridge Identification in V8 Embedders...',
           description: "",
+          section: "News",},{id: "news-i-was-invited-to-serve-the-program-committee-for-issta-26",
+          title: 'I was invited to serve the program committee for ISSTA’26.',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
