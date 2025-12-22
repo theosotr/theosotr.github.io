@@ -89,6 +89,9 @@ ninja.data = [{
           section: "News",},{id: "news-i-was-invited-to-serve-the-program-committee-for-issta-26",
           title: 'I was invited to serve the program committee for ISSTA’26.',
           description: "",
+          section: "News",},{id: "news-our-paper-unfulfilled-promises-llm-based-detection-of-os-compatibility-issues-in-infrastructure-as-code-has-been-accepted-to-fse-2026",
+          title: 'Our paper Unfulfilled Promises: LLM-Based Detection of OS Compatibility Issues in Infrastructure as...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
