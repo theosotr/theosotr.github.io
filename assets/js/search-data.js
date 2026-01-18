@@ -92,6 +92,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-unfulfilled-promises-llm-based-detection-of-os-compatibility-issues-in-infrastructure-as-code-has-been-accepted-to-fse-2026",
           title: 'Our paper Unfulfilled Promises: LLM-Based Detection of OS Compatibility Issues in Infrastructure as...',
           description: "",
+          section: "News",},{id: "news-our-paper-evaluating-compiler-optimization-impacts-on-zkvm-performance-has-been-accepted-to-asplos-2026",
+          title: 'Our paper Evaluating Compiler Optimization Impacts on zkVM Performance has been accepted to...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
