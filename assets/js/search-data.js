@@ -95,6 +95,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-evaluating-compiler-optimization-impacts-on-zkvm-performance-has-been-accepted-to-asplos-2026",
           title: 'Our paper Evaluating Compiler Optimization Impacts on zkVM Performance has been accepted to...',
           description: "",
+          section: "News",},{id: "news-two-papers-got-accepted-at-pldi-2026-enumerating-ill-typed-programs-for-testing-type-analyzers-and-semantic-reification-a-new-paradigm-for-random-program-generation",
+          title: 'Two papers got accepted at PLDI 2026: “Enumerating Ill-Typed Programs for Testing Type...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
