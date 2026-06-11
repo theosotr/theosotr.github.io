@@ -98,8 +98,8 @@ ninja.data = [{
           section: "News",},{id: "news-two-papers-got-accepted-at-pldi-2026-enumerating-ill-typed-programs-for-testing-type-analyzers-and-semantic-reification-a-new-paradigm-for-random-program-generation",
           title: 'Two papers got accepted at PLDI 2026: “Enumerating Ill-Typed Programs for Testing Type...',
           description: "",
-          section: "News",},{id: "news-our-paper-pldi-26-paper-enumerating-ill-typed-programs-for-testing-type-analyzers-was-chosen-to-receive-a-distinguished-paper-award",
-          title: 'Our paper PLDI’26 paper “Enumerating Ill-Typed Programs for Testing Type Analyzers” was chosen...',
+          section: "News",},{id: "news-our-pldi-26-paper-enumerating-ill-typed-programs-for-testing-type-analyzers-was-chosen-to-receive-a-distinguished-paper-award",
+          title: 'Our PLDI’26 paper “Enumerating Ill-Typed Programs for Testing Type Analyzers” was chosen to...',
           description: "",
           section: "News",},{
         id: 'social-email',
