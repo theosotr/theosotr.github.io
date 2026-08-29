@@ -24,8 +24,8 @@ latest_posts:
 ---
 
 I am an applied scientist at the
-[National Infrastructures for Research and Technology]
-(https://grnet.gr/en) (GRNET),
+[National Infrastructures for Research and Technology](https://grnet.gr/en)
+(GRNET),
 where I lead the Technical Advisory Unit
 for Digital Systems Reliability
 and Performance within the ICT Systems
