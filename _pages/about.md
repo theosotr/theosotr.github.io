@@ -57,7 +57,6 @@ I was also an intern at Amazon Web Services (AWS
 of static analysis techniques for detecting security issues.
 For my detailed CV, please follow this [link](./assets/pdf/theosot_cv.pdf).
 
-
 My research focuses on **designing and building practical tools**
 that automate various tasks across the software development pipeline,
 such as code analysis, test input generation, and fault detection.
