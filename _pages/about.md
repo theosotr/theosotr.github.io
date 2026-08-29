@@ -2,7 +2,8 @@
 layout: about
 title: about
 permalink: /
-subtitle: Postdoctoral researcher, Department of Computer Science, ETH Zurich, Switzerland
+subtitle: Applied Scientist, National Infrastructures for Research and Technology -- GRNET, Greece 
+Research Fellow, University of Athens
 
 profile:
   align: right
@@ -23,7 +24,23 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a postdoctoral researcher in the
+I am an applied scientist at the
+[National Infrastructures for Research and Technology]
+(https://grnet.gr/en) (GRNET),
+where I lead the Technical Advisory Unit
+for Digital Systems Reliability
+and Performance within the ICT Systems
+and Services Architecture Office.
+My work there centers around the design
+and implementation of practical,
+automated tooling,
+such as program analysis, testing, and bug-finding techniques,
+for assessing the reliability and performance of digital services
+operating at national scale,
+including public-sector and academic infrastructure.
+
+Previously,
+I was a postdoctoral researcher in the
 [Advanced Software Technologies](https://ast.ethz.ch/)
 group at ETH Zurich, under the guidance of
 Prof [Zhendong Su](https://people.inf.ethz.ch/suz/).
@@ -40,14 +57,11 @@ I was also an intern at Amazon Web Services (AWS
 of static analysis techniques for detecting security issues.
 For my detailed CV, please follow this [link](./assets/pdf/theosot_cv.pdf).
 
+
 My research focuses on **designing and building practical tools**
 that automate various tasks across the software development pipeline,
-such as code analysis,
-test input generation,
-and fault detection.
+such as code analysis, test input generation, and fault detection.
 To achieve this,
 I leverage and develop programming language technologies
-(e.g., formal models,
-static and dynamic program analysis,
-randomized testing)
+(e.g., formal models, static and dynamic program analysis, randomized testing)
 and methods from empirical software engineering.
