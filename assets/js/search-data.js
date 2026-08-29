@@ -3,8 +3,8 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-about",
-    title: "about",
+    id: "nav-",
+    title: "",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
@@ -98,8 +98,17 @@ ninja.data = [{
           section: "News",},{id: "news-two-papers-got-accepted-at-pldi-2026-enumerating-ill-typed-programs-for-testing-type-analyzers-and-semantic-reification-a-new-paradigm-for-random-program-generation",
           title: 'Two papers got accepted at PLDI 2026: “Enumerating Ill-Typed Programs for Testing Type...',
           description: "",
+          section: "News",},{id: "news-i-was-invited-to-serve-the-program-committee-for-fse-27",
+          title: 'I was invited to serve the program committee for FSE’27.',
+          description: "",
           section: "News",},{id: "news-our-pldi-26-paper-enumerating-ill-typed-programs-for-testing-type-analyzers-was-chosen-to-receive-a-distinguished-paper-award",
           title: 'Our PLDI’26 paper “Enumerating Ill-Typed Programs for Testing Type Analyzers” was chosen to...',
+          description: "",
+          section: "News",},{id: "news-started-as-an-applied-scientist-at-grnet-where-i-now-lead-a-team-working-on-the-reliability-and-performance-of-national-scale-digital-services",
+          title: 'Started as an applied scientist at GRNET, where I now lead a team...',
+          description: "",
+          section: "News",},{id: "news-i-was-invited-to-serve-the-program-committee-for-pldi-27",
+          title: 'I was invited to serve the program committee for PLDI’27.',
           description: "",
           section: "News",},{
         id: 'social-email',
