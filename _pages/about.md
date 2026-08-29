@@ -2,8 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Applied Scientist, National Infrastructures for Research and Technology -- GRNET, Greece 
-Research Fellow, University of Athens
+subtitle: "Applied Scientist, National Infrastructures for Research and Technology (GRNET), Greece<br>Research Fellow, University of Athens"
 
 profile:
   align: right
