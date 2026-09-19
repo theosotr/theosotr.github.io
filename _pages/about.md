@@ -45,7 +45,7 @@ that automate various tasks across the software development pipeline,
 such as code analysis,
 test input generation,
 and fault detection.
-To achieve this,
+To do so,
 I leverage and develop programming language technologies
 (e.g., formal models,
 static and dynamic program analysis,
